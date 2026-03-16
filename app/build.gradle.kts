@@ -4,12 +4,12 @@ plugins {
 
 android {
     namespace = "tv.channelsurfer.app"
-    compileSdk = 30
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "tv.channelsurfer.app"
         minSdk = 21
-        targetSdk = 30
+        targetSdk = 36
         versionCode = 1
         versionName = "1.0.0"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
@@ -41,7 +41,6 @@ android {
     }
 
     compileOptions {
-        isCoreLibraryDesugaringEnabled = true
         sourceCompatibility = JavaVersion.VERSION_17
         targetCompatibility = JavaVersion.VERSION_17
     }
@@ -56,8 +55,6 @@ dependencies {
     implementation("androidx.webkit:webkit:1.12.1")
     implementation("androidx.activity:activity-ktx:1.9.3")
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.8.7")
-
-    coreLibraryDesugaring("com.android.tools:desugar_jdk_libs:2.1.4")
 
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.2.1")
