@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Android TV banner: 320x180dp required for TV launcher -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="320dp"
+    android:height="180dp"
+    android:viewportWidth="320"
+    android:viewportHeight="180">
+
+    <!-- Background gradient rectangle -->
+    <path
+        android:fillColor="#0D47A1"
+        android:pathData="M0,0 L320,0 L320,180 L0,180 Z" />
+
+    <!-- Accent stripe -->
+    <path
+        android:fillColor="#1976D2"
+        android:pathData="M0,140 L320,120 L320,180 L0,180 Z" />
+
+    <!-- TV icon -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M30,45 L100,45 Q104,45 104,49 L104,95 Q104,99 100,99 L30,99 Q26,99 26,95 L26,49 Q26,45 30,45 Z" />
+
+    <!-- TV screen inner -->
+    <path
+        android:fillColor="#0D47A1"
+        android:pathData="M33,49 L97,49 L97,93 L33,93 Z" />
+
+    <!-- Play triangle -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M58,60 L78,71 L58,82 Z" />
+
+    <!-- TV stand -->
+    <path
+        android:fillColor="#BBDEFB"
+        android:pathData="M50,99 L80,99 L85,112 L45,112 Z" />
+
+    <!-- Text area hint: "CHANNEL SURFER" - using shapes to suggest text -->
+    <!-- C -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M120,60 L128,55 L130,55 L122,60 L122,80 L130,85 L128,85 L120,80 Z" />
+    <!-- S -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M138,55 L150,55 L150,58 L138,58 L138,68 L150,68 L150,82 L138,82 L138,85 L150,85 L150,68 L138,68 Z" />
+</vector>

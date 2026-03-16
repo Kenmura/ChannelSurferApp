@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- App launcher icon: simple TV/play shape -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+
+    <!-- TV body -->
+    <path
+        android:fillColor="#1E88E5"
+        android:pathData="M4,6 L44,6 Q46,6 46,8 L46,34 Q46,36 44,36 L4,36 Q2,36 2,34 L2,8 Q2,6 4,6 Z" />
+
+    <!-- TV screen -->
+    <path
+        android:fillColor="#E3F2FD"
+        android:pathData="M6,9 L42,9 L42,33 L6,33 Z" />
+
+    <!-- TV stand -->
+    <path
+        android:fillColor="#1565C0"
+        android:pathData="M18,36 L30,36 L32,42 L16,42 Z" />
+
+    <!-- Play triangle on screen -->
+    <path
+        android:fillColor="#1E88E5"
+        android:pathData="M19,15 L33,21 L19,27 Z" />
+</vector>

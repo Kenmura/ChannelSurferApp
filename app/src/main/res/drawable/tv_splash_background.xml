@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Solid background color -->
+    <item android:drawable="@android:color/black" />
+
+    <!-- Centered app logo -->
+    <item
+        android:drawable="@drawable/app_icon"
+        android:gravity="center" />
+</layer-list>
