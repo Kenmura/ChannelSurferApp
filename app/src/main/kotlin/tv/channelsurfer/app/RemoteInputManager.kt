@@ -33,7 +33,13 @@ class RemoteInputManager(private val webView: WebView) {
             KeyEvent.KEYCODE_MEDIA_PLAY_PAUSE to "MediaPlayPause",
             KeyEvent.KEYCODE_MEDIA_PLAY to "MediaPlay",
             KeyEvent.KEYCODE_MEDIA_PAUSE to "MediaPause",
-            KeyEvent.KEYCODE_MEDIA_STOP to "MediaStop"
+            KeyEvent.KEYCODE_MEDIA_STOP to "MediaStop",
+            KeyEvent.KEYCODE_DPAD_UP to "ArrowUp",
+            KeyEvent.KEYCODE_DPAD_DOWN to "ArrowDown",
+            KeyEvent.KEYCODE_DPAD_LEFT to "ArrowLeft",
+            KeyEvent.KEYCODE_DPAD_RIGHT to "ArrowRight",
+            KeyEvent.KEYCODE_DPAD_CENTER to "Enter",
+            KeyEvent.KEYCODE_ENTER to "Enter"
         )
 
         val jsKey = jsKeyMapping[keyCode]
@@ -48,22 +54,7 @@ class RemoteInputManager(private val webView: WebView) {
             return true
         }
 
-        // For D-Pad (Up, Down, Left, Right, Center) and Enter,
-        // delegate to standard WebView dispatch for native DOM focus navigation.
-        val isDPadOrEnter = when (keyCode) {
-            KeyEvent.KEYCODE_DPAD_UP,
-            KeyEvent.KEYCODE_DPAD_DOWN,
-            KeyEvent.KEYCODE_DPAD_LEFT,
-            KeyEvent.KEYCODE_DPAD_RIGHT,
-            KeyEvent.KEYCODE_DPAD_CENTER,
-            KeyEvent.KEYCODE_ENTER -> true
-            else -> false
-        }
 
-        if (isDPadOrEnter) {
-            // Let the WebView handle focus navigation
-            return webView.dispatchKeyEvent(event)
-        }
 
         return false
     }
